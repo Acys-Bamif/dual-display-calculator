@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Acys Bamif - Vanilla js dual display calculator</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Calculator</title>
+</head>
+
+<body>
+
+	<div id="body">
+		<div id="inputs">
+			<input id="input" readonly="readonly">
+			<input id="input2" readonly="readonly">
+		</div>
+		<div id="buttons">
+			<div class="row">
+				<button class="red" onclick="input.value=''; input2.value =''">CE</button>
+				<button class="red" onclick="del()">DEL</button>
+				<button onclick="mode()">✹/☪</button>
+				<button onclick="input.value += '/'">÷</button>
+			</div>
+			<div class="row">
+				<button onclick="input.value += '1'">1</button>
+				<button onclick="input.value += '2'">2</button>
+				<button onclick="input.value += '3'">3</button>
+				<button onclick="input.value += '*'">*</button>
+			</div>
+			<div class="row">
+				<button onclick="input.value += '4'">4</button>
+				<button onclick="input.value += '5'">5</button>
+				<button onclick="input.value += '6'">6</button>
+				<button onclick="input.value += '-'">-</button>
+			</div>
+			<div class="row">
+				<button onclick="input.value += '7'">7</button>
+				<button onclick="input.value += '8'">8</button>
+				<button onclick="input.value += '9'">9</button>
+				<button onclick="input.value += '+'">+</button>
+			</div>
+			<div class="row">
+				<button onclick="input.value += '.'">.</button>
+				<button onclick="input.value += '0'">0</button>
+				<button id="long" onclick="input2.value = eval(input.value)">=</button>
+			</div>
+		</div>
+	</div>
+
+</body>
+
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
